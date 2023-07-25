@@ -8,17 +8,12 @@ public class Principal {
 
 	public static void main(String[] args) {
 		
-		Filme favorito = new Filme();
-		favorito.setNome("The Matrix");
-		favorito.setAnoDeLancamento(1999);
-		favorito.setDuracaoEmMinutos(135);
-		favorito.setIncluidoNoPlano(true);
-
-		Filme outro = new Filme();
-		outro.setNome("John Wick");
-		outro.setAnoDeLancamento(2014);
-		outro.setDuracaoEmMinutos(101);
-		outro.setIncluidoNoPlano(true);
+		Filme filme = new Filme();
+		filme.setNome("O poderoso chefão");
+		filme.setAnoDeLancamento(1970);
+		filme.setDuracaoEmMinutos(180);
+		filme.setIncluidoNoPlano(true);
+		filme.exibeFichaTecnica();
 
 		Serie serie = new Serie();
 		serie.setNome("La Casa de Papel");
@@ -28,13 +23,7 @@ public class Principal {
 		serie.setTemporadas(5);
 		serie.setEpisodiosPorTemporada(10);
 		serie.setMinutosPorEpisodio(45);
-
-		CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
-		calculadora.inclui(favorito);
-		calculadora.inclui(outro);
-		calculadora.inclui(serie);
-
-		System.out.println("Tempo total: " + calculadora.getTempoTotal());
+		serie.exibeFichaTecnica();
 
 	}
 }
