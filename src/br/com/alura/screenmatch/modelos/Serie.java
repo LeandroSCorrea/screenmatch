@@ -42,4 +42,11 @@ public class Serie extends Titulo {
     public int getMinutosEmMinutos() {
     	return temporadas * episodiosPorTemporada * minutosPorEpisodio;
     }
+
+	@Override
+	public void exibeFichaTecnica() {
+		//System.out.println("Duração para maratonar: " + getMinutosEmMinutos());
+		super.exibeFichaTecnica(); 
+	}
+    
 }

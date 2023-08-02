@@ -15,15 +15,14 @@ public class Principal {
 		filme.setIncluidoNoPlano(true);
 		filme.exibeFichaTecnica();
 
-		Serie serie = new Serie();
-		serie.setNome("La Casa de Papel");
-		serie.setAnoDeLancamento(2017);
-		serie.setIncluidoNoPlano(true);
-		serie.setAtiva(true);
-		serie.setTemporadas(5);
-		serie.setEpisodiosPorTemporada(10);
-		serie.setMinutosPorEpisodio(45);
-		serie.exibeFichaTecnica();
-
+		Serie lost = new Serie();
+		lost.setNome("Lost");
+		lost.setAnoDeLancamento(2017);
+		lost.setIncluidoNoPlano(true);
+		lost.setAtiva(true);
+		lost.setTemporadas(10);
+		lost.setEpisodiosPorTemporada(10);
+		lost.setMinutosPorEpisodio(50);
+		lost.exibeFichaTecnica();
 	}
 }
