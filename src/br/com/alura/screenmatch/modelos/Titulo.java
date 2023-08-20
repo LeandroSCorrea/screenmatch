@@ -63,6 +63,7 @@ public class Titulo {
         System.out.println("Ano de lançamento: " + getAnoDeLancamento());
         System.out.println("Total de avaliações: " + getTotalDeAvaliacoes());
         System.out.println("Duração em minutos: " + getDuracaoEmMinutos());
+        System.out.println("Total de avaliações: " + getTotalDeAvaliacoes());    
         System.out.println("------------------*--------------------------");
     }
 }
